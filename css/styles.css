@@ -1,0 +1,66 @@
+
+.body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #333132;
+}
+
+.header {
+    background: #3d5c4c;
+    color: #333132;
+    padding: 1rem 0;
+    text-align: center;
+    width: cover;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.nav ul li a {
+    color: #333132;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 3rem;
+    background: #3d5c4c;
+    color: #333132;
+    position: fixed;
+    width: 87%;
+    bottom: 0;
+}
+
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+    width: 900px
+}
+
+.cover-home {
+    background-image: url(../images/cover-home-haikei.png);
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    .header, .footer {
+        padding: 1rem;
+    }
+
+    .nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+
