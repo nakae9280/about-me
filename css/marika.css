@@ -1,0 +1,34 @@
+.body { 
+background: linear-gradient(270deg, #282928, #1a1a1a, #666666); 
+background-size: 200% 200%; 
+animation: gradientAnimation 5s infinite alternate;
+} 
+@keyframes gradientAnimation { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } 
+} 
+
+.header {
+    font-size: 200%;
+    padding: 1rem 0;
+    text-align: center;
+    width: cover;
+}
+
+.zisseki {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.tittle {
+display: inline-block;
+font-size: 50px;
+font-family: "ヒラギノ明朝 ProN", sans-serif;
+font-weight: bold;
+margin:0 auto 5%;
+background: linear-gradient(270deg, #c39000 0%, #fff 40%, #c39000 80%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.marikagif {
+    transform: rotate(270deg)
+}
