@@ -1,18 +1,24 @@
 
 .body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #333132;
+    background: linear-gradient(270deg, #191970, #0000ff, #4169e1); 
+background-size: 200% 200%; 
+animation: gradientAnimation 5s infinite alternate;
+} 
+@keyframes gradientAnimation { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } 
 }
 
 .header {
-    background: #3d5c4c;
-    color: #333132;
-    padding: 1rem 0;
-    text-align: center;
-    width: cover;
+    display: inline-block;
+    font-size: 70px;
+    font-family: "HiraMinProN-W6", sans-serif;
+    font-weight: bold;
+    margin: 0 auto 5%;
+    background: linear-gradient(270deg, #c39000 0%, #fff 40%, #c39000 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 50%;
+    transform: translateX(26%);
+
 }
 
 .nav ul {
@@ -26,15 +32,14 @@
 }
 
 .nav ul li a {
-    color: #333132;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .footer {
     text-align: center;
     padding: 3rem;
-    background: #3d5c4c;
-    color: #333132;
+    color: #ffffff;
     position: fixed;
     width: 87%;
     bottom: 0;
@@ -47,10 +52,6 @@
     width: 900px
 }
 
-.cover-home {
-    background-image: url(../images/cover-home-haikei.png);
-    background-size: cover;
-}
 
 @media (max-width: 600px) {
     .header, .footer {
@@ -63,4 +64,21 @@
     }
 }
 
+.setumei {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    margin: 20px;
+}
 
+.setumei2 {
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    margin: 15px;
+}
+
+.gazou {
+    text-align: center;
+    margin-top: 20px;
+}

@@ -15,7 +15,7 @@ animation: gradientAnimation 5s infinite alternate;
 
 .zisseki {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 30px
 }
 
 .tittle {
@@ -29,6 +29,15 @@ background: linear-gradient(270deg, #c39000 0%, #fff 40%, #c39000 80%);
 -webkit-text-fill-color: transparent;
 }
 
-.marikagif {
-    transform: rotate(270deg)
+.marikavideo {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.rinksaki {
+    position: absolute;
+    top: 1300px; 
+    left: 70px;
+    transform: translateX(-50%);
+    font-size: 20px;
 }
