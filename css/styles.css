@@ -1,24 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 .body {
     background: linear-gradient(270deg, #191970, #0000ff, #4169e1); 
-background-size: 200% 200%; 
-animation: gradientAnimation 5s infinite alternate;
+    background-size: 200% 200%; 
+    animation: gradientAnimation 5s infinite alternate;
+    width: 100vw;
+    min-height: 100vh;
 } 
 @keyframes gradientAnimation { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } 
 }
 
 .header {
-    display: inline-block;
-    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: "HiraMinProN-W6", sans-serif;
     font-weight: bold;
-    margin: 0 auto 5%;
+    margin: 0;
     background: linear-gradient(270deg, #c39000 0%, #fff 40%, #c39000 80%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    left: 50%;
-    transform: translateX(26%);
-
+    font-size: clamp(16px, 8vw, 120px);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
 }
 
 .nav ul {
@@ -37,7 +56,6 @@ animation: gradientAnimation 5s infinite alternate;
 }
 
 .footer {
-    text-align: center;
     padding: 3rem;
     color: #ffffff;
     position: fixed;
@@ -52,6 +70,24 @@ animation: gradientAnimation 5s infinite alternate;
     width: 900px
 }
 
+main {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
 @media (max-width: 600px) {
     .header, .footer {
@@ -62,23 +98,63 @@ animation: gradientAnimation 5s infinite alternate;
         display: block;
         margin: 0.5rem 0;
     }
+
+    .setumei {
+        font-size: 8vw;
+    }
+
+    .setumei2 {
+        font-size: 6vw;
+    }
+
+    .gazou {
+        font-size: 4vw;
+    }
 }
 
 .setumei {
+    font-size: clamp(16px, 5vw, 80px);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 50px;
-    color: #ffffff;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #ffffff
 }
 
 .setumei2 {
+    font-size: clamp(14px, 4vw, 64px);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 15px;
-    color: #ffffff;
-    margin: 15px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    color: #ffffff
 }
 
 .gazou {
+    font-size: clamp(12px, 2vw, 32px);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    gap: clamp(10px, 2vw, 40px);
+    margin: 0;
+    padding: 0;
+    position: relative;
 }

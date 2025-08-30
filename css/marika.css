@@ -32,11 +32,12 @@ background: linear-gradient(270deg, #c39000 0%, #fff 40%, #c39000 80%);
 .marikavideo {
     color: #ffffff;
     font-size: 30px;
+    max-width: 1200px;
 }
 
 .rinksaki {
     position: absolute;
-    top: 1300px; 
+    top: 1500px; 
     left: 70px;
     transform: translateX(-50%);
     font-size: 20px;
