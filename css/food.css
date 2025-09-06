@@ -1,0 +1,105 @@
+.body { 
+    background: linear-gradient(270deg, #848788, #bdc3c9, #9eacb4); 
+    background-size: 200% 200%; 
+    animation: gradientAnimation 5s infinite alternate;
+    width: 100vw;
+    min-height: 100vh;
+} 
+@keyframes gradientAnimation { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } 
+} 
+
+.tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(24px, 8vw, 80px);
+    font-family: "ヒラギノ明朝 ProN", sans-serif;
+    font-weight: bold;
+    margin: 0 auto 5%;
+    background: linear-gradient(270deg, #ad002d 0%, #f30100 40%, #c9171e 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    width: 100%;
+    padding: clamp(1rem, 2vw, 3rem);
+}
+
+.tantan {
+    color: #ffffff;
+    font-size: clamp(18px, 4vw, 48px);
+    text-align: left;
+    margin: clamp(0.5rem, 2vw, 2rem) 0;
+    padding: clamp(0.5rem, 1vw, 1.5rem);
+}
+
+.daihuku {
+    color: #ffffff;
+    font-size: clamp(18px, 4vw, 48px);
+    text-align: left;
+    margin: clamp(0.5rem, 2vw, 2rem) 0;
+    padding: clamp(0.5rem, 1vw, 1.5rem);
+}
+
+.harusame {
+    color: #ffffff;
+    font-size: clamp(18px, 4vw, 48px);
+    text-align: left;
+    margin: clamp(0.5rem, 2vw, 2rem) 0;
+    padding: clamp(0.5rem, 1vw, 1.5rem);
+}
+
+.kinako {
+    color: #ffffff;
+    font-size: clamp(18px, 4vw, 48px);
+    text-align: left;
+    margin: clamp(0.5rem, 2vw, 2rem) 0;
+    padding: clamp(0.5rem, 1vw, 1.5rem);
+}
+
+.ponzu {
+    color: #ffffff;
+    font-size: clamp(18px, 4vw, 48px);
+    text-align: left;
+    margin: clamp(0.5rem, 2vw, 2rem) 0;
+    padding: clamp(0.5rem, 1vw, 1.5rem);
+}
+
+/* レスポンシブ画像設定 */
+img {
+    max-width: 100%;
+    height: auto;
+    width: clamp(150px, 30vw, 400px);
+    border-radius: clamp(4px, 1vw, 12px);
+    margin: clamp(0.5rem, 1vw, 1.5rem);
+}
+
+/* コンテナの中央配置 */
+.container, .food-container, .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(1rem, 2vw, 3rem);
+}
+
+/* スマートフォン対応 */
+@media (max-width: 768px) {
+    .tittle {
+        font-size: clamp(20px, 10vw, 60px);
+        padding: clamp(0.5rem, 3vw, 2rem);
+    }
+    
+    .tantan, .daihuku, .harusame, .kinako, .ponzu {
+        font-size: clamp(16px, 6vw, 36px);
+        margin: clamp(0.5rem, 3vw, 1.5rem) 0;
+        text-align: left;
+    }
+    
+    img {
+        width: clamp(120px, 40vw, 300px);
+    }
+}
