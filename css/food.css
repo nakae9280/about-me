@@ -1,5 +1,5 @@
 .body { 
-    background: linear-gradient(270deg, #848788, #bdc3c9, #9eacb4); 
+    background: linear-gradient(270deg, #282928, #1a1a1a, #666666); 
     background-size: 200% 200%; 
     animation: gradientAnimation 5s infinite alternate;
     width: 100vw;
@@ -16,7 +16,7 @@
     font-family: "ヒラギノ明朝 ProN", sans-serif;
     font-weight: bold;
     margin: 0 auto 5%;
-    background: linear-gradient(270deg, #ad002d 0%, #f30100 40%, #c9171e 80%);
+    background: linear-gradient(270deg, #c39000 0%, #fff 40%, #c39000 80%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

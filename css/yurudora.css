@@ -1,0 +1,43 @@
+.body { 
+    background: linear-gradient(270deg, #282928, #1a1a1a, #666666); 
+    background-size: 200% 200%; 
+    animation: gradientAnimation 5s infinite alternate;
+    width: 100vw;
+    min-height: 100vh;
+} 
+@keyframes gradientAnimation { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } 
+} 
+
+.tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(24px, 8vw, 80px);
+    font-family: "ヒラギノ明朝 ProN", sans-serif;
+    font-weight: bold;
+    margin: 0 auto 5%;
+    background: linear-gradient(270deg, #c39000 0%, #fff 40%, #c39000 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    width: 100%;
+    padding: clamp(1rem, 2vw, 3rem);
+}
+
+.setumei {
+    color: #ffffff;
+    font-size: clamp(18px, 4vw, 48px);
+    text-align: left;
+    margin: clamp(0.5rem, 2vw, 2rem) 0;
+    padding: clamp(0.5rem, 1vw, 1.5rem);
+    font-family: "Zen Maru Gothic", "Rounded Mplus 1c", "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", sans-serif;
+}
+
+.gazou {
+    text-align: center;
+    font-size: clamp(18px, 4vw, 48px);
+    margin: clamp(0.5rem, 2vw, 2rem) 0;
+    padding: clamp(0.5rem, 1vw, 1.5rem);
+}
+
